@@ -1,0 +1,170 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+p{
+    font-size:29px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+header .logo h1 {
+    margin: 0;
+    color: blue;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section.content {
+    padding: 20px;
+    background-color: powderblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section.content h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+section.content form {
+    display: flex;
+    flex-direction: column;
+}
+
+section.content form label {
+    margin: 10px 0 5px;
+}
+
+section.content form input,
+section.content form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section.content form button {
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section.content form button:hover {
+    background-color: #e6b800;
+}
+
+footer {
+    padding: 20px;
+    background-color: none;
+    text-align: center;
+}
+
+footer .auth a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .auth a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+}
+nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+nav .dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: lightblue;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background: #333;
+            color: lightblue;
+            border: none;
+            cursor: pointer;
+        }
